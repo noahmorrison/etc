@@ -1,3 +1,8 @@
 - link:
     ~/.nvimrc: neovimrc
     ~/.zprezto: prezto/
+
+- shell:
+    -
+        - "git submodule update --init --recursive --remote"
+        - "Installing/Updating submodules"

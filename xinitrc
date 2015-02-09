@@ -1,0 +1,41 @@
+#!/bin/sh
+
+### ---
+### Nicities
+### ---
+# imitate right mouse button on double tap
+synclient TapButton2=3
+
+# load xresources (colors etc)
+color gxr
+xrdb ~/.Xresources
+
+# cursor
+xsetroot -cursor_name left_ptr
+
+# background
+xsetroot -solid `color bg`
+
+
+### ---
+### Tools
+### ---
+
+# keybindings
+SXHKD_SHELL="sh" sxhkd &
+SXHKD_SHELL="sh" sxhkd -c etc/sxhkd/nowm &
+
+# focusing daemon
+focusd &
+
+# information
+ibar &
+
+# hang (run `stop x` to quit)
+~/bin/hang x
+
+### ---
+### deinit
+### ---
+
+killall bar

@@ -5,6 +5,7 @@
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
     ~/.tigrc: tigrc
+    ~/.xinitrc: xinitrc
 
 - shell:
     -

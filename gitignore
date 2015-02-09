@@ -1,0 +1,18 @@
+# swap files
+*.swp
+*.swo
+
+# Compiling files
+
+# -- Python
+*.pyc
+__pycache__
+*.egg-info
+
+# -- Haskell
+*.hi
+*.o
+
+# Python Coverage
+*,cover
+.coverage

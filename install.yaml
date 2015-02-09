@@ -2,6 +2,7 @@
     ~/.nvimrc: neovimrc
     ~/.bashrc: bashrc
     ~/.gitconfig: gitconfig
+    ~/.gitignore: gitignore
 
 - shell:
     -

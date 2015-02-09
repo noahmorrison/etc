@@ -1,6 +1,7 @@
 - link:
     ~/.nvimrc: neovimrc
     ~/.bashrc: bashrc
+    ~/.profile: profile
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
 

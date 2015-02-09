@@ -2,6 +2,10 @@
 # ~/.bashrc
 #
 
+if test -f ~/.profile
+then
+    source ~/.profile
+fi
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return

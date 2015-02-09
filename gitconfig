@@ -1,0 +1,9 @@
+[user]
+	email = noah@morrison.ph
+	name = noah morrison
+[push]
+	default = simple
+[core]
+	excludesfile = /home/noah/.gitignore
+	autocrlf = false
+	editor = neovim

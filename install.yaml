@@ -1,6 +1,5 @@
 - link:
     ~/.nvimrc: neovimrc
-    ~/.zprezto: prezto/
 
 - shell:
     -

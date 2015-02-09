@@ -1,0 +1,11 @@
+# Verbose commit message
+bind status C !git commit -v
+
+# amend commit messages
+bind status a !?git commit --amend
+
+# push commit upstream
+bind main p !git push
+
+# force the push (and double check if the user wants to force)
+bind main P !?git push --force

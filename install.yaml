@@ -4,6 +4,7 @@
     ~/.profile: profile
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
+    ~/.tigrc: tigrc
 
 - shell:
     -

@@ -1,5 +1,6 @@
 - link:
     ~/.nvimrc: neovimrc
+    ~/.bashrc: bashrc
 
 - shell:
     -

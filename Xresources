@@ -1,0 +1,24 @@
+! etc
+*scrollBar: false
+URxvt*perl-ext-common: default,matcher,clipboard
+*font: -*-gohufont-bold-r-normal-*-14-100-100-100-*-80-iso8859-1,-*-symbola-*-*-*-*-*-*-*-*-*-*-*-*
+
+! colors
+*background: #051020
+*foreground: #fff5ee
+*color0: #1a1a1a
+*color1: #c71585
+*color2: #008b45
+*color3: #8b4513
+*color4: #104e8b
+*color5: #9a32cd
+*color6: #008b8b
+*color7: #c1cdc1
+*color8: #4d4d4d
+*color9: #b03060
+*color10: #008b45
+*color11: #a0522d
+*color12: #4f94cd
+*color13: #e066ff
+*color14: #00c5cd
+*color15: #fffff0

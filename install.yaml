@@ -6,6 +6,7 @@
     ~/.gitignore: gitignore
     ~/.tigrc: tigrc
     ~/.xinitrc: xinitrc
+    ~/.Xresources: Xresources
 
 - shell:
     -

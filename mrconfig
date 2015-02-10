@@ -1,0 +1,31 @@
+
+[src/c/ruff]
+checkout = git clone 'git@github.com:noahmorrison/ruff.git' 'ruff'
+
+[src/c/terminibbles]
+checkout = git clone 'git@github.com:malensek/terminibbles' 'terminibbles'
+
+[src/euler]
+checkout = git clone 'git@github.com:noahmorrison/euler.git' 'euler'
+
+[src/hs/haskoban]
+checkout = git clone 'git@github.com:noahmorrison/haskoban.git' 'haskoban'
+
+[src/py/chevron]
+checkout = git clone 'git@github.com:noahmorrison/chevron.git' 'chevron'
+           git submodule update --init --recursive
+
+[src/rs/surs]
+checkout = git clone 'git@github.com:noahmorrison/surs.git' 'surs'
+
+[src/web/gitsite]
+checkout = git clone 'git@github.com:noahmorrison/gitsite.git' 'gitsite'
+
+[src/web/tsbc-glory]
+checkout = git clone 'git@github.com:noahmorrison/tsbc-glory.git' 'tsbc-glory'
+
+[src/web/gitsite/_site]
+checkout = git clone 'git@github.com:noahmorrison/noahmorrison.github.io.git' '_site'
+
+[src/py/wmup]
+checkout = git clone 'git@github.com:noahmorrison/wmup.git' 'wmup'

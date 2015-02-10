@@ -9,6 +9,7 @@ PATH=$PATH:/usr/bin
 PATH=$PATH:/usr/local/bin
 PATH=$PATH:$HOME/bin
 PATH=$PATH:`gem env path`
+PATH=$PATH:/usr/bin/core_perl
 PATH=$PATH:$SCALA_HOME/bin
 
 export PATH

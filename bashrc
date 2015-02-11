@@ -91,6 +91,21 @@ prompt () {
         top="$top \[${fg[yellow]}\]$(human $timer_show)"
     fi
 
+    # Is a git repo
+    if git rev-parse --git-dir > /dev/null 2>&1
+    then
+        local branch=`git rev-parse --abbrev-ref HEAD`
+        local color="green"
+
+        # There are uncommitted changes
+        if [[ -n "$(git status -s)" ]]
+        then
+            color="red"
+        fi
+
+        top="$top \[${fg[$color]}\]$branch"
+    fi
+
     local bot="\[${fg[white]}\]! \[${fg[normal]}\]"
     local boterr="\[${fg[red]}\]! \[${fg[normal]}\]"
 

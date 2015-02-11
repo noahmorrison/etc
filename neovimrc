@@ -1,1 +1,42 @@
+" why I don't use ed
 syntax on
+
+""
+" line numbers
+""
+
+" color
+set relativenumber number
+highlight LineNr ctermfg=grey
+highlight CursorLineNr ctermfg=darkgrey
+
+" toggle line numbers
+map tn :set relativenumber! number!<CR>
+
+
+""
+" tabs
+""
+
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+
+""
+" whitespace
+""
+
+" color
+highlight ExtraWhitespace ctermbg=red
+
+" show trailing whitespace
+match ExtraWhitespace /\s\+$/
+
+" show trailing whitespace and spaces before a tab
+match ExtraWhitespace /\s\+$\| \+\ze\t/
+
+" show whitespace
+set listchars=tab:├─,trail:┅,extends:→,precedes:←
+set list
+set nowrap

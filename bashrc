@@ -95,11 +95,11 @@ prompt () {
     local boterr="\[${fg[red]}\]! \[${fg[normal]}\]"
 
     if test $EXIT = 0
-    then 
-    	PS1=$top\\n$bot
+    then
+        PS1=$top\\n$bot
     else
-    	PS1=$top\\n$boterr
-    fi 
+        PS1=$top\\n$boterr
+    fi
 }
 
 trap 'timer_start' DEBUG

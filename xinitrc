@@ -23,7 +23,7 @@ xsetroot -solid `color bg`
 
 # keybindings
 SXHKD_SHELL="sh" sxhkd &
-SXHKD_SHELL="sh" sxhkd -c etc/sxhkd/nowm &
+SXHKD_SHELL="sh" sxhkd -c .config/sxhkd/nowm &
 
 # focusing daemon
 focusd &

@@ -111,14 +111,14 @@ prompt () {
 
     if test $EXIT = 0
     then
-        PS1=$top\\n$bot
+        echo "$top\\n$bot"
     else
-        PS1=$top\\n$boterr
+        echo "$top\\n$boterr"
     fi
 }
 
 trap 'timer_start' DEBUG
-export PROMPT_COMMAND=prompt
+PS1=`prompt`
 
 ##
 ## Readline
@@ -129,9 +129,22 @@ bind 'set horizontal-scroll-mode on'
 
 # nicer autocomplete
 bind 'TAB:menu-complete'
-# \e[Z is Shift-Tab 
+# \e[Z is Shift-Tab
 bind '"\e[Z":menu-complete-backward'
 
 # History searching
 bind 'Control-k:history-substring-search-backward'
 bind 'Control-j:history-substring-search-forward'
+
+
+##
+## Better History
+##
+
+shopt -s histappend
+
+HISTSIZE=10000
+HISTFILESIZE=$HISTSIZE
+HISTCONTROL=ignorespace:ignoredups
+
+PROMPT_COMMAND='builtin history -a'

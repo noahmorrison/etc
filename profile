@@ -3,6 +3,9 @@ export VISUAL=neovim
 
 export SCALA_HOME=/usr/share/scala
 
+export LD_LIBRARY_PATH=/usr/local/lib
+
+
 # Path
 PATH=/bin
 PATH=$PATH:/usr/bin

@@ -1,3 +1,9 @@
+set date-display = short
+
+##
+## Binds
+##
+
 # Verbose commit message
 bind status C !git commit -v
 

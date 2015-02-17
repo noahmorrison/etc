@@ -16,7 +16,7 @@ PATH=$PATH:$HOME/bin
 PATH=$PATH:$HOME/usr/bin
 
 # Program bin folders
-PATH=$PATH:`gem env path`
+PATH=$PATH:$HOME/.gem/ruby/2.2.0/bin
 PATH=$PATH:/usr/bin/core_perl
 PATH=$PATH:$SCALA_HOME/bin
 

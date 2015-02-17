@@ -8,6 +8,7 @@
     ~/.xinitrc: xinitrc
     ~/.Xresources: Xresources
     ~/.mrconfig: mrconfig
+    ~/.screenrc: screenrc
 
 - shell:
     -

@@ -148,3 +148,12 @@ HISTFILESIZE=$HISTSIZE
 HISTCONTROL=ignorespace:ignoredups
 
 PROMPT_COMMAND='builtin history -a'
+
+
+##
+## GNU Screen
+##
+
+function scr () {
+    screen -S main -D -RR
+}

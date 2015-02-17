@@ -1,0 +1,15 @@
+##
+## Settigns
+##
+
+altscreen on
+vbell off
+
+
+##
+## Bindings
+##
+
+bind ',' prev
+bind '.' next
+bind 'q' quit

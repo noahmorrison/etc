@@ -9,6 +9,7 @@
     ~/.Xresources: Xresources
     ~/.mrconfig: mrconfig
     ~/.screenrc: screenrc
+    ~/.config/ranger/rc.conf: rangerrc
 
 - shell:
     -

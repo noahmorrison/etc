@@ -1,17 +1,27 @@
 - link:
-    ~/.nvimrc: neovimrc
-    ~/.bashrc: bashrc
+    # Shell
+    ~/.screenrc: screenrc
     ~/.profile: profile
+    ~/.bashrc: bashrc
+
+    # Editor
+    ~/.nvimrc: neovimrc
+
+    # Git
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
-    ~/.tigrc: tigrc
-    ~/.xinitrc: xinitrc
-    ~/.Xresources: Xresources
     ~/.mrconfig: mrconfig
-    ~/.screenrc: screenrc
+    ~/.tigrc: tigrc
+
+    # X
+    ~/.Xresources: Xresources
+    ~/.xinitrc: xinitrc
+
+    # Utils
     ~/.config/ranger/rc.conf: rangerrc
 
+
 - shell:
-    -
+    -   # Update submodules
         - "git submodule update --init --recursive --remote"
         - "Installing/Updating submodules"

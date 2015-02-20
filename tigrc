@@ -1,5 +1,4 @@
-set date-display = short
-
+set main-view = date:short,author:full
 ##
 ## Binds
 ##

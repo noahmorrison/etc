@@ -1,5 +1,6 @@
 " why I don't use ed
 syntax on
+filetype plugin indent on
 
 ""
 " line numbers
@@ -17,6 +18,8 @@ map tn :set relativenumber! number!<CR>
 ""
 " tabs
 ""
+
+map tt :set expandtab!<CR>
 
 set expandtab
 set tabstop=4
@@ -40,3 +43,13 @@ match ExtraWhitespace /\s\+$\| \+\ze\t/
 set listchars=tab:├─,trail:┅,extends:→,precedes:←
 set list
 set nowrap
+
+
+""
+" folding
+""
+
+set foldmethod=manual
+
+hi Folded ctermbg=8
+hi Folded ctermfg=5

@@ -57,68 +57,24 @@ bg[white]=`c 47`
 bg[normal]=`c 0`
 
 
-# Prompt
-human () {
-    local ms=$1
-    local days=$(( ms / 1000 / 60 / 60 / 24 ))
-    local hours=$(( ms / 1000 / 60 / 60 % 24 ))
-    local minutes=$(( ms / 1000 / 60 % 60 ))
-    local seconds=$(( ms / 1000 % 60 ))
-
-    (( $days > 0 )) && echo -n "${days}d "
-    (( $hours > 0 )) && echo -n "${hours}h "
-    (( $minutes > 0 )) && echo -n "${minutes}m "
-    (( $seconds > 0 )) && echo -n "${seconds}s"
-    echo
-}
-
-timer_start () {
-    timer=${timer:-`date +%s%3N`}
-}
-
-timer_stop () {
-    timer_show=$((`date +%s%3N` - $timer))
-    unset timer
-}
+##
+## Prompt
+##
 
 prompt () {
     local EXIT="$?"
-    timer_stop
 
-    local top="\[${fg[cyan]}\]\w"
-    if test $timer_show -gt 5000
-    then
-        top="$top \[${fg[yellow]}\]$(human $timer_show)"
-    fi
-
-    # Is a git repo
-    if git rev-parse --git-dir > /dev/null 2>&1
-    then
-        local branch=`git rev-parse --abbrev-ref HEAD`
-        local color="green"
-
-        # There are uncommitted changes
-        if [[ -n "$(git status -s)" ]]
-        then
-            color="red"
-        fi
-
-        top="$top \[${fg[$color]}\]$branch"
-    fi
-
-    local bot="\[${fg[white]}\]! \[${fg[normal]}\]"
-    local boterr="\[${fg[red]}\]! \[${fg[normal]}\]"
 
     if test $EXIT = 0
     then
-        echo "$top\\n$bot"
+        echo "\[${fg[white]}\]! \[${fg[normal]}\]"
     else
-        echo "$top\\n$boterr"
+        echo "\[${fg[red]}\]! \[${fg[normal]}\]"
     fi
 }
 
-trap 'timer_start' DEBUG
 PS1=`prompt`
+
 
 ##
 ## Readline

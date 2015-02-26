@@ -2,6 +2,7 @@ export EDITOR=neovim
 export VISUAL=neovim
 
 export SCALA_HOME=/usr/share/scala
+export GOPATH=$HOME/src/go
 
 export LD_LIBRARY_PATH=/usr/local/lib
 
@@ -19,5 +20,6 @@ PATH=$PATH:$HOME/usr/bin
 PATH=$PATH:$HOME/.gem/ruby/2.2.0/bin
 PATH=$PATH:/usr/bin/core_perl
 PATH=$PATH:$SCALA_HOME/bin
+PATH=$PATH:$GOPATH/bin
 
 export PATH

@@ -18,6 +18,8 @@
     # X
     ~/.Xresources: Xresources
     ~/.xinitrc: xinitrc
+    ~/.config/sxhkd/sxhkdrc: sxhkd/rc
+    ~/.config/sxhkd/nowm: sxhkd/nowmrc
 
     # Utils
     ~/.config/ranger/rc.conf: rangerrc

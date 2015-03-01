@@ -1,0 +1,47 @@
+## author: noah morrison <noah@morrison.ph>
+## Default configuration, for use with any WM
+
+##
+## Launch Programs
+##
+
+super + Return
+    urxvt
+
+super + grave
+    launcher
+
+##
+## Music
+##
+
+{XF86AudioPrev, XF86AudioNext, XF86AudioPlay}
+    mpc {prev, next, toggle}
+
+##
+## Volume
+##
+
+{XF86AudioLowerVolume, XF86AudioRaiseVolume, XF86AudioMute}
+    vol {-, +, toggle}
+
+##
+## Brightness
+##
+
+{XF86MonBrightnessDown, XF86MonBrightnessDown}
+    brightness {-, +}
+
+##
+## Keyboard Mouse
+##
+
+ctrl + {1, 2, 3}
+    xdotool click {1, 3, 2}
+
+##
+## Reload
+##
+
+~ctrl + alt + Escape
+    pkill -USR1 -x sxhkd

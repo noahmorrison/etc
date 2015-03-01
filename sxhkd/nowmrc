@@ -1,0 +1,53 @@
+## author: noah morrison <noah@morrison.ph>
+## For use with wmutils https://github.com/wmutils/core
+## And custom scripts found at https://github.com/noahmorrison/etc
+
+##
+## Closing
+##
+
+super + Delete
+    end x
+
+super + ctrl + x
+    killw `pfw` && focusd prev
+
+##
+## Focusing
+##
+
+super + {comma, period}
+    focusd {prev, next}
+
+##
+## Movement
+##
+
+super + {h,j,k,l}
+    wmv {-10 0, 0 10, 0 -10, 10 0} `pfw`
+
+super + shift + {h,j,k,l}
+    wmv {-10000 0, 0 10000, 0 -10000, 10000 0} `pfw`
+
+##
+## Resizing
+##
+
+super + ctrl + {h,j,k,l}
+    wrs {-10 0, 0 10, 0 -10, 10 0} `pfw`
+
+super + ctrl + shift + {j,l}
+    wrs {0 10000, 10000 0} `pfw`
+
+##
+## Tags
+##
+
+super + {0-9}
+    tag flip {0-9}
+
+super + t ; {0-9}
+    tag set {0-9} `pfw`
+
+super + u
+    tag unset `pfw`

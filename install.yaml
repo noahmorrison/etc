@@ -10,14 +10,14 @@
     ~/.nvimrc: neovimrc
 
     # Git
-    ~/.gitconfig: gitconfig
-    ~/.gitignore: gitignore
+    ~/.gitconfig: git/config
+    ~/.gitignore: git/ignore
     ~/.mrconfig: mrconfig
     ~/.tigrc: tigrc
 
     # X
-    ~/.Xresources: Xresources
-    ~/.xinitrc: xinitrc
+    ~/.Xresources: x/resources
+    ~/.xinitrc: x/initrc
     ~/.config/sxhkd/sxhkdrc: sxhkd/rc
     ~/.config/sxhkd/nowm: sxhkd/nowmrc
 

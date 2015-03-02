@@ -29,7 +29,7 @@ super + grave
 ## Brightness
 ##
 
-{XF86MonBrightnessDown, XF86MonBrightnessDown}
+{XF86MonBrightnessDown, XF86MonBrightnessUp}
     brightness {-, +}
 
 ##

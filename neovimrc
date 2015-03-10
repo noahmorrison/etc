@@ -3,6 +3,12 @@ syntax on
 filetype plugin indent on
 
 ""
+" Swap files
+""
+set backupdir=~/.nvim/backup//
+set directory=~/.nvim/swp//
+
+""
 " line numbers
 ""
 
@@ -53,3 +59,9 @@ set foldmethod=manual
 
 hi Folded ctermbg=8
 hi Folded ctermfg=5
+
+""
+" Xml
+""
+
+map <F5> :%s/<\([^>]\)*>/\r&\r/g<enter>:g/^$/d<enter>vat=

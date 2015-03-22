@@ -62,10 +62,9 @@ bg[normal]=`c 0`
 ##
 
 prompt () {
-    local EXIT="$?"
+    local EXIT=$?
 
-
-    if test $EXIT = 0
+    if test "$EXIT" = "0"
     then
         echo "\[${fg[white]}\]! \[${fg[normal]}\]"
     else
@@ -73,7 +72,7 @@ prompt () {
     fi
 }
 
-PS1=`prompt`
+PROMPT_COMMAND='PS1=$(prompt)'
 
 
 ##
@@ -103,7 +102,7 @@ HISTSIZE=10000
 HISTFILESIZE=$HISTSIZE
 HISTCONTROL=ignorespace:ignoredups
 
-PROMPT_COMMAND='builtin history -a'
+PROMPT_COMMAND="$PROMPT_COMMAND; builtin history -a"
 
 
 ##

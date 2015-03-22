@@ -18,14 +18,23 @@ checkout = git clone 'git@github.com:noahmorrison/chevron.git' 'chevron'
 [src/rs/surs]
 checkout = git clone 'git@github.com:noahmorrison/surs.git' 'surs'
 
-[src/web/gitsite]
-checkout = git clone 'git@github.com:noahmorrison/gitsite.git' 'gitsite'
-
 [src/web/tsbc-glory]
 checkout = git clone 'git@github.com:noahmorrison/tsbc-glory.git' 'tsbc-glory'
 
-[src/web/gitsite/_site]
-checkout = git clone 'git@github.com:noahmorrison/noahmorrison.github.io.git' '_site'
-
 [src/py/wmup]
 checkout = git clone 'git@github.com:noahmorrison/wmup.git' 'wmup'
+
+[src/web/newsite]
+checkout = git clone 'git@github.com:noahmorrison/gitsite.git' 'newsite'
+
+[src/c#/genodf]
+checkout = git clone 'git@github.com:noahmorrison/genodf.git' 'genodf'
+
+[src/go/src/aneditor]
+checkout = git clone 'git@github.com:noahmorrison/aneditor.git' 'aneditor'
+
+[bin]
+checkout = git clone 'git@github.com:noahmorrison/bin.git' 'bin'
+
+[etc]
+checkout = git clone 'git@github.com:noahmorrison/etc.git' 'etc'

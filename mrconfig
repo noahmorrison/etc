@@ -2,9 +2,6 @@
 [src/c/ruff]
 checkout = git clone 'git@github.com:noahmorrison/ruff.git' 'ruff'
 
-[src/c/terminibbles]
-checkout = git clone 'git@github.com:malensek/terminibbles' 'terminibbles'
-
 [src/euler]
 checkout = git clone 'git@github.com:noahmorrison/euler.git' 'euler'
 

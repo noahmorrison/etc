@@ -1,0 +1,36 @@
+#
+# Files
+#
+
+db_file            "~/.mpd/database"
+log_file           "~/.mpd/log"
+pid_file           "~/.mpd/pid"
+state_file         "~/.mpd/state"
+sticker_file       "~/.mpd/sticker.sql"
+
+music_directory    "~/usr/msc"
+playlist_directory "~/.mpd/playlists"
+
+#
+# Misc
+#
+
+bind_to_address "127.0.0.1"
+mixer_type "software"
+
+#
+# Outputs
+#
+
+audio_output {
+    type       "alsa"
+    name       "alsa"
+    mixer_type "software"
+}
+
+audio_output {
+    type                    "fifo"
+    name                    "visual"
+    path                    "~/.ncmpcpp/mpd.fifo"
+    format                  "44100:16:2"
+}

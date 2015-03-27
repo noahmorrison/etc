@@ -1,0 +1,15 @@
+#!/bin/sh
+
+pypi () {
+    python ./setup.py register -r pypitest &&
+    python ./setup.py sdist upload -r pypitest &&
+
+    python ./setup.py register -r pypi &&
+    python ./setup.py sdist upload -r pypi
+}
+
+datediff () {
+    d1=`date -d "$1" +%s`
+    d2=`date -d "$2" +%s`
+    echo `dc -e "$d1 $d2 - 86400 /p"` "days"
+}

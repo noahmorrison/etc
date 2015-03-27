@@ -2,6 +2,8 @@
 # ~/.bashrc
 #
 
+source ~/.shutils
+
 if test -f ~/.profile
 then
     source ~/.profile
@@ -23,14 +25,6 @@ done < ~/.gitignore
 alias ls=$ls_alias
 alias la="ls -A"
 alias rm="mv -t ~/.trash"
-
-pypi () {
-    python ./setup.py register -r pypitest &&
-    python ./setup.py sdist upload -r pypitest &&
-
-    python ./setup.py register -r pypi &&
-    python ./setup.py sdist upload -r pypi
-}
 
 # Colors
 c () { echo -e "\e[${1}m"; }
@@ -55,6 +49,8 @@ bg[purple]=`c 45`
 bg[cyan]=`c 46`
 bg[white]=`c 47`
 bg[normal]=`c 0`
+
+unset -f c
 
 
 ##

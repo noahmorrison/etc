@@ -5,6 +5,7 @@
     ~/.screenrc: screenrc
     ~/.profile: profile
     ~/.bashrc: bashrc
+    ~/.shutils: shutils
 
     # Editor
     ~/.nvimrc: neovimrc

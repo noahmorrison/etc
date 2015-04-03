@@ -25,6 +25,10 @@
     # Utils
     ~/.config/ranger/rc.conf: rangerrc
 
+    # Mpd
+    ~/.mpd/mpd.conf: mpd/conf
+    ~/.ncmpcpp/config: mpd/ncmpcpp
+
 - shell:
     -   # Update submodules
         - "git submodule update --init --recursive"

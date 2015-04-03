@@ -27,8 +27,8 @@ checkout = git clone 'git@github.com:noahmorrison/gitsite.git' 'newsite'
 [src/c#/genodf]
 checkout = git clone 'git@github.com:noahmorrison/genodf.git' 'genodf'
 
-[src/go/src/aneditor]
-checkout = git clone 'git@github.com:noahmorrison/aneditor.git' 'aneditor'
+[src/go/src/edsrv]
+checkout = git clone 'git@github.com:noahmorrison/edsrv.git' 'edsrv'
 
 [bin]
 checkout = git clone 'git@github.com:noahmorrison/bin.git' 'bin'

@@ -1,6 +1,7 @@
 " why I don't use ed
 syntax on
 filetype plugin indent on
+set ruler
 
 ""
 " Swap files

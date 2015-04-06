@@ -1,3 +1,5 @@
 set draw_borders true
 
 set display_size_in_main_column false
+
+set preview_images true

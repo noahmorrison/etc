@@ -19,6 +19,7 @@ PATH=$PATH:$HOME/usr/bin
 # Program bin folders
 PATH=$PATH:$HOME/.gem/ruby/2.2.0/bin
 PATH=$PATH:/usr/bin/core_perl
+PATH=$PATH:/usr/bin/vendor_perl
 PATH=$PATH:$SCALA_HOME/bin
 PATH=$PATH:$GOPATH/bin
 

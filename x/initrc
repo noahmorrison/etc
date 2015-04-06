@@ -7,14 +7,13 @@
 synclient TapButton2=3
 
 # load xresources (colors etc)
-color gxr
 xrdb ~/.Xresources
 
 # cursor
 xsetroot -cursor_name left_ptr
 
 # background
-xsetroot -solid `color bg`
+xsetroot -solid "#`qxr background`"
 
 
 ### ---

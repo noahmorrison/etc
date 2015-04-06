@@ -1,24 +1,5 @@
-! etc
 *scrollBar: false
 URxvt*perl-ext-common: default,matcher,clipboard
 *font: -*-gohufont-bold-r-normal-*-14-100-100-100-*-80-iso8859-1,-*-symbola-*-*-*-*-*-*-*-*-*-*-*-*
 
-! colors
-*background: #262626
-*foreground: #bfbfbf
-*color0: #0d0d0d
-*color1: #cd2626
-*color2: #698b22
-*color3: #cd6600
-*color4: #53868b
-*color5: #8b668b
-*color6: #4682b4
-*color7: #ffe7ba
-*color8: #1a1a1a
-*color9: #cd1076
-*color10: #b3ee3a
-*color11: #eeb422
-*color12: #1c86ee
-*color13: #ee7ae9
-*color14: #00eeee
-*color15: #f2f2f2
+#include "/home/noah/etc/colors/x-dotshare"

@@ -22,8 +22,9 @@
     ~/.config/sxhkd/sxhkdrc: sxhkd/rc
     ~/.config/sxhkd/nowm: sxhkd/nowmrc
 
-    # Utils
-    ~/.config/ranger/rc.conf: rangerrc
+    # Ranger
+    ~/.config/ranger/rc.conf: ranger/rc
+    ~/.config/ranger/scope.sh: ranger/scope.sh
 
     # Mpd
     ~/.mpd/mpd.conf: mpd/conf

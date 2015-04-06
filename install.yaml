@@ -31,6 +31,13 @@
     ~/.ncmpcpp/config: mpd/ncmpcpp
 
 - shell:
-    -   # Update submodules
-        - "git submodule update --init --recursive"
-        - "Installing/Updating submodules"
+    # update git submodules
+    - "git submodule update --init --recursive"
+
+    # Setup required mpd files
+    - "touch ~/.mpd/database"
+    - "touch ~/.mpd/log"
+    - "touch ~/.mpd/pid"
+    - "touch ~/.mpd/state"
+    - "touch ~/.mpd/sticker.sql"
+    - "mkdir -p ~/.mpd/playlists"

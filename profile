@@ -1,5 +1,5 @@
-export EDITOR=neovim
-export VISUAL=neovim
+export EDITOR=vim
+export VISUAL=vim
 
 export SCALA_HOME=/usr/share/scala
 export GOPATH=$HOME/src/go

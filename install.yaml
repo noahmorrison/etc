@@ -8,7 +8,7 @@
     ~/.shutils: shutils
 
     # Editor
-    ~/.nvimrc: neovimrc
+    ~/.vimrc: vimrc
 
     # Git
     ~/.gitconfig: git/config
@@ -41,3 +41,7 @@
     - "touch ~/.mpd/state"
     - "touch ~/.mpd/sticker.sql"
     - "mkdir -p ~/.mpd/playlists"
+
+    # Setup required vim files
+    - "mkdir -p ~/.vim/backup"
+    - "mkdir -p ~/.vim/swp"

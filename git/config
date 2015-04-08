@@ -6,4 +6,3 @@
 [core]
 	excludesfile = /home/noah/.gitignore
 	autocrlf = false
-	editor = neovim

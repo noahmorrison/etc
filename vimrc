@@ -6,15 +6,14 @@ set ruler
 ""
 " Swap files
 ""
-set backupdir=~/.nvim/backup//
-set directory=~/.nvim/swp//
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swp//
 
 ""
 " line numbers
 ""
 
 " color
-set relativenumber number
 highlight LineNr ctermfg=grey
 highlight CursorLineNr ctermfg=darkgrey
 
@@ -47,7 +46,7 @@ match ExtraWhitespace /\s\+$/
 match ExtraWhitespace /\s\+$\| \+\ze\t/
 
 " show whitespace
-set listchars=tab:├─,trail:┅,extends:→,precedes:←
+set listchars=tab:┃\ ,trail:┅,extends:→,precedes:←
 set list
 set nowrap
 
@@ -66,3 +65,22 @@ hi Folded ctermfg=5
 ""
 
 map <F5> :%s/<\([^>]\)*>/\r&\r/g<enter>:g/^$/d<enter>vat=
+
+
+"""""
+""" Plug
+"""""
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'Valloric/YouCompleteMe'
+Plug 'fatih/vim-go'
+Plug 'kongo2002/fsharp-vim'
+Plug 'airblade/vim-gitgutter'
+
+Plug 'scrooloose/nerdtree'
+map <C-l> :NERDTreeToggle<CR>
+let NERDTreeQuitOnOpen=1
+
+
+call plug#end()

@@ -19,13 +19,14 @@ mimetype=`file --mime-type -Lb "$path"`
 try()
 {
     output=`eval '"$@"'` \
-    && echo "$output" | head -n "$height";
-    exit 0
+    && echo "$output" | head -n "$height"\
+    && exit 0
 }
 
 case "$mimetype" in
     text/*)
-        try highlight -Oansi "$path";;
+        try highlight -Oansi "$path" ||
+        try cat "$path";;
     video/* | audio/*)
         try exiftool "$path";;
 esac

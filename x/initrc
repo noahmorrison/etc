@@ -6,6 +6,10 @@
 # imitate right mouse button on double tap
 synclient TapButton2=3
 
+# load fonts
+xset +fp /usr/share/fonts/ohsnap
+xset +fp /usr/share/fonts/symbola
+
 # load xresources (colors etc)
 xrdb ~/.Xresources
 
@@ -30,7 +34,7 @@ focusd &
 # information
 ibar &
 
-# hang (run `stop x` to quit)
+# hang (run `end x` to quit)
 ~/bin/hang x
 
 ### ---

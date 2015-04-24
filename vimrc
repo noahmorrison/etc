@@ -2,6 +2,7 @@
 syntax on
 filetype plugin indent on
 set ruler
+set hidden
 
 ""
 " Swap files
@@ -46,7 +47,7 @@ match ExtraWhitespace /\s\+$/
 match ExtraWhitespace /\s\+$\| \+\ze\t/
 
 " show whitespace
-set listchars=tab:┃\ ,trail:┅,extends:→,precedes:←
+set listchars=tab:┃\ ,trail:┅,extends:▶,precedes:◀
 set list
 set nowrap
 

@@ -1,5 +1,5 @@
 *scrollBar: false
 URxvt*perl-ext-common: default,matcher,clipboard
-*font: -*-gohufont-bold-r-normal-*-14-100-100-100-*-80-iso8859-1,-*-symbola-*-*-*-*-*-*-*-*-*-*-*-*
+*font: -*-ohsnap-medium-*-*-*-14-*-*-*-*-*-*-*,-*-symbola-*-*-*-*-*-*-*-*-*-*-*
 
 #include "/home/noah/etc/colors/x-dotshare"

@@ -2,4 +2,4 @@
 URxvt*perl-ext-common: default,matcher,clipboard
 *font: -*-ohsnap-medium-*-*-*-14-*-*-*-*-*-*-*,-*-symbola-*-*-*-*-*-*-*-*-*-*-*
 
-#include "/home/noah/etc/colors/x-dotshare"
+#include "/home/noah/etc/colors/trim-yer-beard"

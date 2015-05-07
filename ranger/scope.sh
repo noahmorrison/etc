@@ -23,6 +23,17 @@ try()
     && exit 0
 }
 
+deflate()
+{
+    cat $1 | perl -MCompress::Zlib -e 'undef $\; print uncompress(<>)' |
+    sed "s/\x00/\n\n/"
+}
+
+case "$path" in
+    *"git/objects/"*)
+        try deflate "$path";;
+esac
+
 case "$mimetype" in
     text/*)
         try highlight -Oansi "$path" ||

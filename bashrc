@@ -64,7 +64,7 @@ prompt () {
     then
         echo "\[${fg[white]}\]! \[${fg[normal]}\]"
     else
-        echo "\[${fg[red]}\]! \[${fg[normal]}\]"
+        echo "\[${fg[red]}\]# \[${fg[normal]}\]"
     fi
 }
 

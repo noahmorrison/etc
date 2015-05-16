@@ -74,14 +74,24 @@ map <F5> :%s/<\([^>]\)*>/\r&\r/g<enter>:g/^$/d<enter>vat=
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'Valloric/YouCompleteMe'
 Plug 'fatih/vim-go'
 Plug 'kongo2002/fsharp-vim'
 Plug 'airblade/vim-gitgutter'
 
 Plug 'scrooloose/nerdtree'
+
+Plug 'OmniSharp/omnisharp-vim'
+Plug 'tpope/vim-dispatch'
+Plug 'ervandew/supertab'
 map <C-l> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
 
 
 call plug#end()
+
+
+"""""
+""" SuperTab
+"""""
+
+let g:SuperTabDefaultCompletionType = 'context'
